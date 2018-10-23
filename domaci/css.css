@@ -1,0 +1,9 @@
+#container-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+fieldset {
+    width: 40%;
+    text-align: center;
+}

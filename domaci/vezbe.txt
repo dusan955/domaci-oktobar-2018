@@ -1,0 +1,42 @@
+1.
+Stranica treba da pita korisnika kako se zove, kada on upiše svoje ime na stranici treba da se ispiše "Tvoje ime je Sanja" - ako Sanja popunjava.
+Koristite document.body i innerHTML za ispis.
+
+2.
+Pita: "Koliko imaš godina?"
+Ispisuje: "Ti imaš 25 godina" (ako je odgovor 25)
+Koristite: document.getElementById za ispis
+
+3.
+Pita:
+  Kako se zoveš?
+  Koliko imaš godina?
+Ispisuje: "Ti se zoveš Sanja i imaš 25 godina";
+Koristite: document.querySelector za ispis
+
+4.
+Pita: Kad si rođen?
+Ispisuje: "Ti imaš 25 godina" (ako je odgovor bio 1993)
+
+5.
+Pita: Koliko imaš godina?
+Ispisuje: "Ti si rođen 1993" (ako je odgovor bio 25)
+
+6.
+Pita:
+  Upišite trenutnu cenu:
+  Upišite ime proizvoda:
+  Upišite cenu posle poskupljenja:
+Ispisuje: "Hleb je poskupeo za 15%"
+
+7.
+Pita:
+  koja je širina sobe?
+  koja je dužina sobe?
+Ispisuje: "Površina sobe je 20m2"
+
+8.
+Pomoću event listenera svi prethodni zadaci (osim 1. za koji ćete videti primer)
+
+
+

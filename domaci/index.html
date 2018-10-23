@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="container-flex">
+     
+        <fieldset>
+            <legend>Zadatak1</legend>
+            <label for="pitanje1">Kako se zoves?</label> <br>
+            <input type="text" id="pitanje1">
+            <input type="button" value="Posalji" id="btn1">
+            <p id="zadatak1"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Zadatak2</legend>
+            <label for="pitanje2">Koliko imas godina?</label><br>
+            <input type="text" id="pitanje2">
+            <input type="button" value="Posalji" id="btn2">
+            <p id="zadatak2"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Zadatak3</legend>
+            <label for="pitanje3a">Kako se zoves?</label><br>
+            <input type="text" id="pitanje3a"><br>
+            <label for="pitanje3b">Koliko imas godina?</label><br>
+            <input type="text" id="pitanje3b"><br>
+            <input type="button" value="Posalji" id="btn3">
+            <p id="zadatak3"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Zadatak4</legend>
+            <label for="pitanje4">Kad si rodjen?</label><br>
+            <input type="text" id="pitanje4"><br>
+            <input type="button" value="Posalji" id="btn4">
+            <p id="zadatak4"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Zadatak5</legend>
+            <label for="pitanje5">Koliko imas godina?</label> <br>  
+            <input type="text" id="pitanje5"> <br>
+            <input type="button" id="btn5" value="Posalji">
+            <p id="zadatak5"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Zadatak6</legend>
+            <label for="pitanje6a">Upisite trenutnu cenu prozivoda:</label> <br>
+            <input type="number" id="pitanje6a"> <br>
+            <label for="pitanje6b">Upisite ime prozivoda:</label> <br>
+            <input type="text" id="pitanje6b"> <br>
+            <label for="pitanje6c">Upisite cenu posle poskupljenja:</label> <br>
+            <input type="number" id="pitanje6c"> <br>
+            <input type="button" value="Posalji" id="btn6">
+            <p id="zadatak6"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Zadatak7</legend>
+            <label for="pitanje7a">Koja je sirina sobe?</label> <br>
+            <input type="text" id="pitanje7a"> <br>
+            <label for="pitanje7b">Koja je duzina sobe?</label> <br>
+            <input type="text" id="pitanje7b"><br>
+            <input type="button" id="btn7" value="Posalji">
+            <p id="zadatak7"></p>
+      </fieldset>
+    </section>
+<script>
+    document.getElementById("btn1").addEventListener("click", function () {
+  var ime=document.getElementById('pitanje1').value;
+  document.getElementById('zadatak1').innerHTML="Vase ime je " +ime+ ".";
+})
+
+document.getElementById('btn2').addEventListener('click', function() {
+var godine=document.getElementById('pitanje2').value;
+document.getElementById('zadatak2').innerHTML="Ti imas "+godine+" godina.";
+
+})
+
+document.getElementById('btn3').addEventListener('click',function(){
+    var ime=document.getElementById('pitanje3a').value;
+    var godine=document.getElementById('pitanje3b').value;
+    document.getElementById('zadatak3').innerHTML="Ti se zoves "+ime+" i imas "+godine+" godina."
+})
+
+document.getElementById('btn4').addEventListener ("click",function(){
+    var godine=2018-document.getElementById('pitanje4').value;
+    document.getElementById('zadatak4').innerHTML='Ti imas '+godine+'godina.';
+})
+
+document.getElementById('btn5').addEventListener('click', function() {
+var godine=2018-document.getElementById('pitanje5').value;
+document.getElementById('zadatak5').innerHTML="Ti si rodjen "+godine+" godine.";
+
+})
+
+document.getElementById('btn6').addEventListener('click', function(){
+    var trenutnaCena=document.getElementById('pitanje6a').value;
+    var ime=document.getElementById('pitanje6b').value;
+    var vecaCena=document.getElementById('pitanje6b').value;
+    var procenat = (((vecaCena - trenutnaCena)/trenutnaCena) * 100);
+    document.getElementById('zadatak6').innerHTML=ime+" je poskupeo za "+procenat+" posto";
+})
+
+document.getElementById('btn7').addEventListener('click', function() {
+    var duzina=document.getElementById('pitanje7a').value;
+    var sirina=document.getElementById('pitanje7b').value;
+    var povrsina=duzina*sirina;
+    document.getElementById('zadatak7').innerHTML="Povrsina sobe je "+povrsina+" m2";
+})
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
