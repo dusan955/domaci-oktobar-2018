@@ -1,0 +1,569 @@
+#container1 .first,#container1 .second, #container1 .third{
+    display: block;
+    float: left;
+    width: 33.33%;
+    height: 100px;
+}
+
+#container1 .fourth, #container1 .fifth, #container1 .sixth {
+   height: 50px;
+    width: 100%;
+    float: left;
+}
+#container1 > footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 40px;
+}
+
+#container2 .first, #container2 .second, #container2 .third, #container2 .fourth, #container2 .fifth, #container2 .sixth {
+    display: block;
+    float: left;
+    width:33.3%;
+    height: 133px;
+    
+}
+#container2 > footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 30px;
+}
+
+
+#container3 .first, #container3 .second, #container3 .third {
+    display: block;
+    float: left;
+    width: 33.3%;
+    height: 100px;
+}
+#container3 .fourth, #container3 .fifth {
+    display: block;
+    float: left;
+    width: 50%;
+    height:90px;
+}
+
+#container3 .sixth {
+    width: 100%;
+    height: 70px;
+    float: left;
+    
+}
+#container3 > footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 30px;
+}
+
+#container4 .first, #container4 .second, #container4 .third, #container4 .fourth, #container4 .fifth, #container4 .sixth {
+   display: block;
+   float: left;
+   width: 16.6%;
+   min-height: 70px;
+
+}
+
+#container4 > footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 40px;
+}
+
+#container5 .first, #container5 .second, #container5 .third, #container5 .fourth, #container5 .fifth, #container5 .sixth {
+    display: block;
+    float: left;
+    width: 16.6%;
+    min-height: 170px;
+    
+}
+
+#container5 > footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 40px;
+}
+#container6 .fifth, #container6 .third, #container6 .fourth, #container6 .second, #container6 .first {
+
+}
+
+#container6 .sixth {
+
+}
+
+#container7 .first, #container7 .second {
+    display: block ;
+    float: left;
+    height: 60px;
+    width: 50%;
+
+}
+#container7 .third, #container7 .fourth {
+    display: block ;
+    float: left;
+    height: 60px;
+    width: 50%;
+}
+
+#container7 .fifth, #container7 .sixth, #container7 footer{
+    display: block ;
+    float: left;
+    height: 58px;
+    width: 100%;
+
+}
+
+#container8 .first,#container8 .second,#container8 .third, #container8 .fourth {
+    display: block;
+    float: left;
+    width: 25%;
+    min-height: 80px;
+}
+
+#container8 .fifth, #container8 .sixth {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 80px;
+}
+
+#container8 footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 60px;
+}
+
+#container9 .first, #container9 .third, #container9 .second {
+    display: block;
+    float: left;
+    width: 33.33%;
+    height: 80px;
+}
+
+#container9 .fourth{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 80px;
+
+}
+#container9 .fifth, #container9  .sixth {
+    display: block;
+    float: left;
+    width: 25%;
+    height: 80px;
+}
+#container9 footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 60px;
+}
+
+#container10 .first, #container10 .second, #container10 .third {
+    display: block;
+    float: left;
+    width: 33.3%;
+    height: 80px;
+}
+
+#container10 .fourth, #container10 .sixth{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 80px;
+}
+
+#container10 .fifth {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 80px;
+}
+
+#container10 footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 60px;
+}
+
+#container11 .first, #container11 .third {
+    float: left;
+    display: block;
+    width: 20%;
+    height: 80px;
+}
+
+#container11 .second {
+    float: left;
+    display: block;
+    width: 60%;
+    height: 80px;
+}
+
+#container11 .fourth, #container11 .sixth {
+    display: block;
+    float: left;
+    width: 35%;
+    height: 80px;
+}
+
+#container11 .fifth {
+    display: block;
+    float: left;
+    width: 30%;
+    height: 80px;
+}
+
+#container11 footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 60px;
+}
+
+#container12 .first, #container12 .fifth, #container12 .fourth {
+    float: left;
+    display: block;
+    width: 30%;
+    height: 80px;
+}
+#container12 .second, #container12 .third, #container12 .sixth {
+    float: left;
+    display: block;
+    width: 70%;
+    height: 80px;
+}
+#container12 footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+}
+
+#container13 .first, #container13 .second {
+    float: left;
+    display: block;
+    width: 80%;
+    height: 50px;
+}
+
+#container13 .third, #container13 .fourth {
+    float: right;
+    display: block;
+    width: 80%;
+    height: 50px;
+}
+#container13 .fifth, #container13 .sixth {
+
+    float: left;
+    display: block;
+    width: 50%;
+    height: 50px;
+}
+#container13 footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 40px;
+}
+#container14 .first, #container14 .second, #container14 .third, #container14 .fourth, #container14 .sixth, #container14 .fifth {
+    display: inline-block;
+    height: 30px;
+    
+}
+#container14 footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 60px; 
+}
+
+#container15 .first{
+    display: block;
+    width: 33%;
+    height: 50px;
+    float: left;
+    clear: both;
+    
+}
+#container15 .second {
+    display: block;
+    float: left;    
+    height: 50px;
+    width: 33%;
+    clear: left;
+    
+}
+
+#container15 .third {
+    display: block;
+    float: left;    
+    height: 50px;
+    width: 33%;
+    clear: left;
+   
+   
+}
+#container15 .fourth, #container15 .fifth {
+    display: block;
+    float: left;
+    height: 50px;
+    width: 60%;
+} 
+#container15 .sixth {
+    display: block;
+    width: 100%;
+    float: left;
+    height: 50px;
+  
+}
+
+#container15 footer {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 45px; 
+    position: relative;
+    bottom: 300px;
+    left: 290px;
+}
+
+
+#container16 .first, #container16 .second, #container16 .third, #container16 .fourth, #container16 .fifth {
+    display: block;
+    float: left;
+    min-height: 100px;
+    width: 20%;
+}
+#container16 .sixth {
+    display: block;
+    float: left;
+    min-height: 100px;
+    width: 100%;
+}
+#container16 footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 90px; 
+}
+
+#container17 .first{
+    display: block;
+    height: 50px;
+    width: 40%;
+   
+}
+
+#container17 .second {
+    display: block;
+    height: 53px;
+    width: 40%;
+    float: left;
+    
+}
+
+#container17 .third{
+    display: block;
+    float: left;
+    height: 50px;
+    width: 40%;
+}
+#container17 .fourth {
+    display: block;
+    float: left;
+    height: 50px;
+    width: 50%;
+}
+
+#container17 .fifth {
+    display: block;
+    float: left;
+    height: 50px;
+    width: 50%;
+}
+
+#container17 .sixth {
+    display: block;
+    float: left;
+    height: 50px;
+    width: 100%;
+}
+#container17 footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 40px; 
+}
+
+#container18 .first {
+    float: left;
+    display: block;
+    width: 100%;
+    height: 70px;
+}
+#container18 .second {
+    float: left;
+    display: block;
+    width: 50%;
+    height: 60px;
+}
+#container18 .third {
+    float: left;
+    display: block;
+    width: 20%;
+    height: 60px;
+}
+#container18 .fourth{
+    float: left;
+    display: block;
+    width: 30%;
+    height: 60px;
+}
+#container18 .fifth, #container18 .sixth {
+    float: left;
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+#container18 footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 40px; 
+}
+#container19 .first {
+    display: block;
+    float: right;
+    width: 33.3%;
+    height: 100px;
+}
+#container19 .fourth, #container19 .fifth {
+    display: block;
+    float: right;
+    width: 50%;
+    height:80px;
+}
+
+#container19 .sixth {
+    width: 100%;
+    height: 70px;
+    float: right;
+}
+
+#container19 footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 40px; 
+}
+#container19 .second, #container19 .third {
+    display: block;
+    float: left;
+    width: 33.3%;
+    height:100px;
+}
+#container20 .first,#container20 .second, #container20 .third {
+    float: left;
+    display: block;
+    width: 33.33%;
+    height: 60px;
+}
+#container20 .fourth, #container20 .fifth {
+    float: left;
+    display: block;
+    width: 50%;
+    height: 60px;
+}
+
+#container20 .sixth {
+    width: 100%;
+    height: 70px;
+    float: left;
+}
+header {
+    height: 50px;
+}
+
+#container20 footer {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 50%;
+    
+} 
+#container20 header{
+    position: relative;
+    top:235px;
+    width: 50%;
+    left: 295px;
+}
+#container20 {
+    position: relative;
+}
+#container20 main  {
+    position: relative;
+    top: 0;
+}
+
+#container6 {
+ position : relative;
+    }
+#container6 main {
+position : relative;
+width : 66.66%;
+margin : auto;
+top : 10px;
+border : none;
+}
+#container6 .first {
+float : left;
+width : 99px;
+height : 150px;
+}
+#container6 .second {
+float : left;
+width : 99px;
+height : 150px;
+}
+#container6 .third {
+ float : right;
+width : 99px;
+height : 150px;
+}
+#container6 .fourth {
+float : right;
+width : 99px;
+height : 150px;
+    }
+ #container6 .fifth {
+    position : absolute;
+    right : -100px;
+    top : 0;
+    width : 99px;
+    height : 150px;
+    }
+#container6 .sixth {
+    position : absolute;
+    left : -100px;
+    width : 99px;
+    height : 150px;
+    }
+#container6 header {
+    position : relative;
+    top : 220px;
+    }
+#container6 footer {
+    position : absolute;
+    top : 0;
+    height : 60px;
+    width : 600px;
+    }
+
