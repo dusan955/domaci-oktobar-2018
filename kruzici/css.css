@@ -1,0 +1,202 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#a1 {
+    border: solid red 3px;
+
+
+}
+
+#a2 {
+    border: dashed blue 1.5px;
+    font-weight: bold;
+
+}
+#a3 {
+    border: blue solid 6px;
+    font-style: italic;
+
+}
+#a4 {
+    border: dotted lawngreen 3px;
+    font-style: italic;
+    font-weight: bold;
+}
+#a5 {
+    border: 5px black;
+    border-top: dotted;
+    border-bottom: dotted;
+    border-left: dashed;
+    border-right: dashed;
+    font-size: 200%;
+}
+#a6{
+    border: dotted 3px;
+    border-color: red green;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#a7{
+    border: dotted 3px;
+    border-color: blue black yellow;
+}
+
+#a8 {
+    border: dotted 3px;
+    border-color: red green blue black;
+}
+
+#a9 {
+    background: yellow;
+    border: 15px solid;
+    border-color: red green blue black;
+}
+
+#a10 {
+    border-radius: 50%;
+    background: yellow;
+    border: 15px solid;
+    border-color: red green blue black;
+
+
+}
+#a11 {
+    border: 15px solid;
+    border-radius: 50%;
+    border-color: red green blue black;
+    padding-top: 30px;
+    text-decoration: line-through;
+}
+
+#a12 {
+    border: black 2px solid;
+    
+}
+
+#a12>div {
+    border: red 1px solid;
+    margin: 10px;
+    height: 70px;
+}
+
+#a13 {
+   background: yellow;
+   border: 5px solid deeppink;
+
+}
+#a13>div {
+ margin: 10px;
+ border: solid blue 5px;
+ background:red;
+ height: 70px;
+
+}
+#a14 {
+
+    outline: green 4px solid;
+    border: 4px solid deeppink;
+    background: yellow;
+
+}
+
+#a14>div{
+    outline: green 4px solid;
+    border: 4px solid blue;
+    background: red;
+    height: 70px;
+    margin: 10px;
+    
+}
+
+#a15>div {
+    border: 1px solid red;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 95px;
+}
+
+#a16>div {
+    position: relative;
+    border: 2px solid red;
+    margin-left: -10px;
+    margin-top:-10px;
+    margin-right: 5px;
+    height: 90px;
+}
+
+#a17 {
+    position: relative;
+    margin-top: 0px;
+}
+#a17>div{
+    position: absolute; 
+    border: 2px solid red;
+    margin-left: -10px;
+    margin-top:-8px;
+    margin-right: 5px;
+    height: 90px;
+    width: 100px;
+    text-align: right;
+}
+
+#a18>div{
+    border: red solid 2px;
+    overflow: auto;
+    height: 90px;
+    margin: 2px;
+}
+#a19>div {
+    border: red solid 2px;
+    overflow-x: scroll;
+    height: 90px;
+    margin: 2px;
+    
+    
+}
+#a20 {
+    background: red;   
+}
+
+#jedan {
+    border-radius: 5px;
+    background: blue;
+    height: 30px;
+    width: 40px;
+    position: relative;
+    left: 50px;
+    top: 40px
+    
+   
+    
+}
+p {
+    width: 1000px;
+}
+
+#tri {    
+    border-radius: 5px;
+    background: yellow;
+    height: 30px;
+    width: 50px;
+    position: relative;
+    top: -45px;
+    left: 5px;
+   
+}
+
+
+ #dva {
+    border-radius: 5px;
+    background: green;
+    height: 30px;
+    width: 60px;
+    position: relative;
+    top: 35px;
+    left: 5px;
+    
+ }
