@@ -1,0 +1,20 @@
+.container-flex {
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+}
+fieldset {
+    width: 40%;
+    text-align: center;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, yellow); /* Standard syntax (must be last) */
+    box-shadow: 10px 10px grey;
+    
+}
+fieldset>legend {
+    background-color: black;
+    color: white;
+    
+}
+

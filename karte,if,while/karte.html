@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="zadatak1">
+        <h1>Sve dvojke</h1>
+
+    </div>
+    <div id="zadatak2">
+        <h1>Sve karte</h1>
+    </div>
+    <div id="zadatak3">
+        <h1>Sve karte sa srcem na sebi</h1>
+    </div>
+    <div id="zadatak4">
+        <h1>Random znak karte</h1>
+    </div>
+    <div id="zadatak5">
+        <h1>4 random karte</h1>
+    </div>
+
+    <div id="selectlista">
+        <h1>Select lista</h1> <br>
+        <h2>asdasd</h2>
+    </div>
+    <div id="tabela">
+        <h1>Tabela</h1>
+    </div>
+    <div id="randomBoja" style="display: block; float: left;margin: 20px;height: 90px; width: 90px; text-align: center">
+        <h1>Boja</h1>
+    </div>
+    <div id="brojeviOd1do10">
+        <h1>Ispis brojeva</h1>
+    </div>
+    <script>
+        //SVE DVOJKE
+        var karta = document.getElementById('zadatak1');
+        var znak = "";
+        for (i = 1; i <= 4; i++) {
+            if (i == 1) {
+                znak = "C";
+            } else if (i == 2) {
+                znak = "D";
+            } else if (i == 3) {
+                znak = "H";
+            } else {
+                znak = "S";
+            }
+            karta.innerHTML += `<img src="karte/2${znak}.png" width="50">`;
+        };
+        //Sve karte 
+        var karta2 = document.getElementById('zadatak2');
+        var znak = '';
+        for (i = 1; i <= 4; i++) {
+            if (i == 1) {
+                znak = "C";
+            } else if (i == 2) {
+                znak = "D";
+            } else if (i == 3) {
+                znak = "H";
+            } else {
+                znak = "S";
+            }
+            for (b = 1; b <= 14; b++) {
+                if (b != 11) {
+                    karta2.innerHTML += `<img src="karte/${b}${znak}.png" width="50">`;
+                }
+            } karta2.innerHTML += "<hr>"
+        }
+
+        //Sve karte sa srcem
+        var karta3 = document.getElementById('zadatak3');
+        for (i = 1; i <= 14; i++) {
+            if (i != 11) {
+                karta3.innerHTML += `<img src="karte/${i}H.png" width="50">`;
+            }
+        }
+
+        //random znak karte
+        var karta4 = document.getElementById('zadatak4');
+        var random = 1 + Math.floor(Math.random() * (4));
+        var znak = "";
+        if (random == 1) {
+            znak = "C";
+        } else if (random == 2) {
+            znak = "D";
+        } else if (random == 3) {
+            znak = "H";
+        } else {
+            znak = "S";
+        } for (i = 1; i <= 14; i++) {
+            if (i != 11) {
+                karta4.innerHTML += `<img src="karte/${i}${znak}.png" width="50">`;
+            }
+        }
+
+        // random 4 karte 
+        var karta5 = document.getElementById("zadatak5")
+        var randomZnak = 1 + Math.floor(Math.random() * (4));
+        var randomKarta = 1 + Math.floor(Math.random() * (14));
+        var znak = "";
+        for (d = 1; d <= 4; d++) {
+            if (randomZnak == 1) {
+                znak = "C";
+            } else if (randomZnak == 2) {
+                znak = "D";
+            } else if (randomZnak == 3) {
+                znak = "H";
+            } else {
+                znak = "S";
+            }
+            for (i = 1; i <= 1; i++) {
+                karta5.innerHTML += `<img src="karte/${randomKarta}${znak}.png" width="50">`;
+            }
+        }
+
+        //Select lista 
+            function selectLista(pocetak,kraj) {
+                var ispis="<select>";
+                for(var i=pocetak;i<=kraj ;i++){
+                    ispis+="<option>"+ i +"</option>";
+                }
+                ispis+="</select>";
+                return document.getElementById("selectlista").innerHTML=ispis;
+                
+            };
+            selectLista(1900,2018);
+            
+        //tablela
+        function kreirajTabelu(kolone, redovi) {
+            var ispis = "<table  border=2px><legend><h1>TABELA</h1</legend>";
+            for (i = 0; i < kolone; i++) {
+                ispis += '<tr></tr>';
+                for (r = 0; r < redovi; r++) {
+                    ispis += `<td> ${r} </td>`;
+
+                }
+            }
+
+            ispis += "</table>"
+            return ispis;
+        }
+        document.getElementById("tabela").innerHTML= kreirajTabelu(10, 11);
+        
+        function randomBojaPozadine(){
+            var green= Math.floor(Math.random()*255);
+            var red= Math.floor(Math.random()*255);
+            var blue= Math.floor(Math.random()*255);
+            var ispis="";
+            document.getElementById("randomBoja").style.backgroundColor +=`rgb(${green},${red},${blue})`;
+        };
+        randomBojaPozadine();
+        
+        function ispisiBrojeveOd1do10 () {
+           var ispis=0;
+            while(ispis<10) {
+                ispis++;
+                document.getElementById("brojeviOd1do10").innerHTML+=ispis;
+           } return ispis;
+            
+        }
+        ispisiBrojeveOd1do10 ();
+
+    </script>
+</body>
+
+</html>

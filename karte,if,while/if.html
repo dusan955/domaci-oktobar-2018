@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vezbanjecss.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-flex">
+        <fieldset>
+            <legend>Zadatak1</legend>
+            <p id="ispis"></p>
+            <input type="button" name="prviZadatak" value="Da li je random broj paran" id="prviZadatak">
+        </fieldset>
+        <fieldset>
+            <legend>Zadatak2</legend>
+            <p id="ispis2"></p>
+            <input type="button" id="btn2" name="drugiZadatak" value="Koliki je broj?">
+        </fieldset>
+        <fieldset>
+            <legend>Zadatak3</legend>
+            <label for="pitanje1">Koliko imas godina?</label><br>
+            <input type="number" id="pitanje1">
+            <p id="ispis3"></p>
+            <p id="ispis3a"></p>
+            <input type="button" id="btn3" name="treciZadatak" value="ULAZ">
+        </fieldset>
+        <fieldset>
+            <legend>Zadatak4</legend>
+            <input type="button" id='btn4' value="Kako se zoves?">
+        </fieldset>
+        <fieldset>
+            <legend>Zadatak5</legend>
+            <input type="button" id="btn5" value="Koji je danas dan?">
+        </fieldset>
+        <fieldset>
+            <legend>Zadatak6</legend>
+            <input type="button" id="btn6" value="Press">
+            <p id="danispis"></p>
+        </fieldset>
+
+        <fieldset id="zadatak8">
+            <legend>Zadatak7</legend>
+            <input type="button" id="listadugme" value="Press">
+            <p id="listaispis"></p>
+        </fieldset>
+
+    </div>
+
+
+    <script>
+        //zadatak 1+zadadak2
+        document.getElementById("prviZadatak").addEventListener("click", function () {
+            var randomBroj = Math.ceil(Math.random() * 10);
+            var Broj = Broj = randomBroj;
+            if (Broj = Broj % 2 == 0) {
+                document.getElementById("ispis").innerHTML = "Broj je paran";
+            } else {
+                document.getElementById("ispis").innerHTML = "Broj je neparan.";
+            }
+        });
+        //zadatak3
+        document.getElementById("btn2").addEventListener("click", function () {
+            var randomBroj = Math.ceil(Math.random() * 10);
+            var Broj = Broj = randomBroj;
+            if (Broj == 3) {
+                document.getElementById("ispis2").innerHTML = "Broj je 3";
+            } else if (Broj > 3) {
+                document.getElementById("ispis2").innerHTML = "Broj je veci od 3";
+            } else {
+                document.getElementById("ispis2").innerHTML = "Broj je manji od 3";
+            }
+        });
+        //zadatak4 
+        document.getElementById("btn3").addEventListener("click", function () {
+            var godine = document.getElementById("pitanje1").value;
+            if (godine >= 18) {
+                document.getElementById("ispis3").innerHTML = "DOZVOLJEN ti je pristup.";
+            } else {
+                document.getElementById("ispis3a").innerHTML = "ZABRANJEN ti je pristup.";
+            }
+        });
+        //Zadatak5
+        document.getElementById("btn4").addEventListener("click", function () {
+            var ime = prompt("Unesite vase ime");
+            if (ime == "Igor") {
+                alert("Zdravo Igore!");
+            } else if (ime == "Uros") {
+                alert("Zdravo Urose");
+            } else if (ime == "Mia") {
+                alert("Zdravo Mia!");
+            } else if (ime == "Sanja") {
+                alert("Zdravo Sanja!");
+            } else if (ime == "Milos") {
+                alert("Zdravo Milose!");
+            } else if (ime == "Zarko") {
+                alert("Zdravo Zarko");
+            } else if (ime == "Tadija") {
+                alert("Zdravo Tadija");
+            } else if (ime == "Uros") {
+                alert("Zdravo Urose!");
+            } else {
+                alert("DOVIDJENJA");
+            }
+        });
+        //zadatak6
+        document.getElementById("btn5").addEventListener("click", function () {
+            var datum = new Date();
+            var danUSedmici = datum.getDay();
+            if (danUSedmici == 0) {
+                alert("Danas je Nedelja");
+            } else if (danUSedmici == 1) {
+                alert("Danas je Ponedeljak");
+            } else if (danUSedmici == 2) {
+                alert("Danas je Utorak");
+            } else if (danUSedmici == 3) {
+                alert("Danas je Sreda");
+            } else if (danUSedmici == 4) {
+                alert("Danas je Cetvrtak");
+            } else if (danUSedmici == 5) {
+                alert("Danas je Petak");
+            } else {
+                alert("Danas je Subota");
+            }
+        });
+
+        //zadatak7 
+        document.getElementById("btn6").addEventListener("click", function () {
+            var ddd=document.getElementById("danispis");
+            var datum = new Date();
+            var sat = datum.getHour();
+            if(sat>5 && sat<11) {
+                ddd.innerHTML="Dobro juro";
+            } else if (sat>11 && sat<19) {
+                ddd.innerHTML="Dobar dan";
+            } else {
+               ddd.innerHTML="Dobro vece";
+        }});
+        //zadatak8
+        document.getElementById("listadugme").addEventListener("click", function () {
+            var lista = "<ul>";
+            for (var i = 200; i < 301; i++) {
+                lista += "<li>" + i + "</li>";
+            }
+            lista += "</ul>";
+            document.getElementById("listaispis").innerHTML = lista;
+        });
+
+
+    </script>
+</body>
+
+</html>
