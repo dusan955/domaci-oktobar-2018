@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Pogodi broj koji sam zamsilio:</legend>
+        <input type="text" id="input1">
+        <input type="button" name="input1" id="btn1" value="Confirm">
+        <p id="ispis"></p>
+    </fieldset>
+    <script>
+        //sve neparne u rasponu koji joj zadamo
+        function neparni(a, b) {
+            var izlaz = "";
+            for (var i = a; i <= b; i++) {
+                if (i % 2 == 1) {
+                    izlaz += i + " ";
+                }
+            }
+            return izlaz;
+        }
+
+        //random boja pozadina
+        function randomPozadina() {
+            var red = Math.floor(Math.random() * 255);
+            var green = Math.floor(Math.random() * 255);
+            var blue = Math.floor(Math.random() * 255);
+            return izlaz = document.body.style.backgroundColor = `rgb(${red},${green},${blue})`;
+        }
+
+        //igrica pogodi broj 
+        document.getElementById("btn1").addEventListener("click", function () {
+            var a = Math.floor(Math.random() * 100);
+            var unetiBroj = document.getElementById("input1").value;
+
+            for (var i = 0; i <= 3; i++) {
+                if (unetiBroj == a) {
+                    document.getElementById("ispis").innerHTML = ("POBEDIO SI!!! Uneo si broj koji sam zamislio");
+                } else if (unetiBroj < a) {
+                    document.getElementById("ispis").innerHTML = ("Trazeni broj je veci!");
+                } else {
+                    document.getElementById("ispis").innerHTML = ("Trazeni broj je manji!");
+                };
+            };
+        });
+        // zadnjiKarakteri("neki string",3);   // treba da vrati zadnja 3 karaktera (u ovom slučaju "ing")
+        function zadnjiKarakteri() {
+
+        }
+
+        // prviKarakteri("neki string",3);     // treba da vrati prva 3 karaktera (u ovom slučaju "nek")
+
+
+        //karakteriOdDo("Neki string",2,7);   // treba da vrati slova od 2. do 7. uključujući i 2. i 7. slovo po redu (u ovom slučaju "eki st");
+        function karakteriOdDo(string) {
+            var subs = string.substring(1, 7);
+            return subs;
+        }
+        //prvoPojavljivanje("a","JavaScript");// treba da vrati poziciju 1. pojavljivanja slova u reči a 0 ako slovo u reči ne postoji ( u ovom slučaju 2)
+
+        function prvoPojavljivanje(string) {
+            var subs = string.indexOf("a");
+            return subs;
+        }
+
+        //  brojPojavljivanje("a","JavaScript");// treba da vrati broj pojavljivanja slova u reči ( u ovom slučaju 2 jer slovo "a" se 2x pominje u reči JavaScript)
+        function brojPojaviljivanja (slovo, string) {
+            var brojPonavljanja=0;
+            for(var i=1;i <= string.length;i++){
+                if(slovo===slovo) {
+                    brojPonavljanja++;
+                    return brojPonavljanja;
+                }
+            }
+            
+
+        };
+
+        //brojPojavljivanjeZanemariVelicinu("a","JavaScript");// isto kao brojPojavljivanja samo što ne obraća pažnju na veličinu slova
+
+
+        //brojSlovaUStringu("Kako si? 2 i 2 su 5");// treba da izbroji slova u stringu (bez razmaka, brojeva i znakova interpunkcije) u ovom slučaju treba a vrati 9
+
+
+        //Napravite funkciju koja će da briše razmake sa početka i kraja ali ne i iz sredine stringa:
+        function izbrisiRazmake(string) {
+            return string.trim();
+        };
+        //8. Napišite funkciju koja piše reč unazad
+        function reverse(string) {
+            return string.split("").reverse().join("");
+        };
+        function randomBrojIzmedju(x, y) {
+            var a = Math.floor(Math.random() * (y - x+1) + x);
+            return a;
+        };
+
+/*--5. Napravite funkciju koja prebacuje tekst iz latinice u ćirilicu:
+    cirilica("JavaScript");// treba da vrati "ЈаваСцрипт"
+    Bonus: Da prihvata 2 parametra i ako se prosledi drugi parametar da konvertuje iz latinice u ćirilicu.
+    Bonus2: Da prihvata 1 parametar i ako je tekst napisan ćirilicom vrati latinicu a ako je tekst napisan latinicom da vrati ćirilicu
+*/
+
+
+    </script>
+</body>
+
+</html>

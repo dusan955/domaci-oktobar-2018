@@ -1,0 +1,16 @@
+# Napišite funkciju koja:
+1. od 2 prosleđena broja vraća veći
+2. od 2 prosleđena broja vraća manji
+3. računa obim kruga O=2*r*PI
+4. konvertuje evro u dinare
+5. konvertuje dinare u evre
+6. ispisuje poruku "dobro jutro", "dobar dan" ili "dobro veče" u zavisnosti od toga koje je doba dana.
+7. ispisuje koliko godina imamo kad kažemo kad smo rođeni
+8. Kaže kad smo rođeni kad mu kažemo koliko imamo godina
+9. Kaže koliko dana smo stari kad mu kažemo rođendan
+10. Konvertuje kilobajte u megabajte
+11. Math.pow() bez korišćenja gotovih funkcija
+12. broji koliko ima samoglasnika u prosleđenom tekstu
+13. proverava da li je broj deljiv sa 7 bez korišćenja % operatora
+14. Množi 2 broja bez korišćenja * operatora
+15. izlači brojeve za loto: prosleđujemo joj: koliko brojeva hoćemo, koji je gonji limit loto(6,36); trebalo bi da vidimo kako se brojevi menjaju da se zaustavi na slučajnom i da pravi pauze između izvlačenja 2 broja

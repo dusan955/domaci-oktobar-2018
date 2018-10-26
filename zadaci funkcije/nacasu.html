@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function vracaManji(a, b) {
+            if (a > b) {
+                return b;
+            } return a;
+        };
+        function vracaVeci(a, b) {
+            if (a > b) {
+                return a;
+            } return b;
+        };
+        function obimKruga(r) {
+            var o = 2 * r * Math.PI;
+            return o;
+        };
+        function dinariUEvre(d) {
+            return iznos = d / 117;
+        };
+        function evriUDinare(e) {
+            return iznos = e * 117;
+        };
+        function pozdrav() {
+            var vreme = new Date().toLocaleTimeString();
+            if (vreme < 11) {
+                return alert = ("Dobro jutro");
+            } else if (vreme < 19) {
+                return alert = ("Dobar dan")
+            } else {
+                return alert = ("Dobro vece")
+            }
+        };
+        function kojeSiGodiste(g) {
+            var d = new Date();
+            var n = d.getFullYear();
+            return godine = n - g;
+        };
+        function kolikoSiStar(g) {
+            var d = new Date();
+            var n = d.getFullYear();
+            return godine = n - g;
+        };
+        function kolikoDanaSamStar(dan, mesec, godina) {
+            var danDanas = 15;
+            var mesecDanas = 10;
+            var godinaDanas = 2018;
+            var danaSad = godinaDanas * 365 + mesecDanas * 30 + danDanas;
+            var danaNekad = godina * 365 + mesec * 30 + dan;
+
+            return danaSad - danaNekad;
+        };
+        function kbUMb(k) {
+            return mb = k / 1024;
+        };
+        function stepenovanje(broj, stepen) {
+            var rezultat = broj;
+            for (var i = 0; i < stepen - 1; i++) {
+                rezultat *= broj;
+            } return rezultat;
+        };
+        function deljivSaSedam(broj) {
+            for (i = 0; i <= broj; i += 7)
+                if (i == broj) return "Jeste deljiv";
+
+            return "Nije deljiv";
+        };
+        function mnozenje(a, b) {
+            var rezultat = 0;
+            for (var i = 0; i < a; i++) {
+                return rezultat += b;
+            }
+
+        };
+        function daLiJeSamoglasnik(slovo) {
+            slovo = slovo.toLowerCase();
+            if (slovo === "a" || slovo === "e" || slovo === "i" || slovo === "o" || slovo === "u") {
+                return true;
+            }
+            return false;
+        };
+        function samoglasnici(string) {
+            var brojSamoglasnika = 0;
+            for (i = 0; i < string.length; i++) {
+                if (daLiJeSamoglasnik(string.charAt(i))) {
+                    brojSamoglasnika++
+                }
+            }
+            return brojSamoglasnika
+        };
+
+/* 
+
+
+
+
+15. izlači brojeve za loto: prosleđujemo joj: koliko brojeva hoćemo, koji je gonji limit loto(6,36); trebalo bi da vidimo kako se brojevi menjaju da se zaustavi na slučajnom i da pravi pauze između izvlačenja 2 broja
+ 
+*/
+
+    </script>
+</body>
+
+</html>
